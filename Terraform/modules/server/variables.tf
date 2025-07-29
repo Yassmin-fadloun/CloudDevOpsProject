@@ -1,4 +1,4 @@
-variable "instance_type" {
-  description = "EC2 instance type"
-  type        = string
-}
+variable "ami_id" {}
+variable "instance_type" {}
+variable "subnet_id" {}
+variable "vpc_id" {}
