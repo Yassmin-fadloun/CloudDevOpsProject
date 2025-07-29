@@ -1,0 +1,15 @@
+---
+- name: Install Amazon Corretto 17 (Java 17 LTS)
+  ansible.builtin.dnf:
+    name: java-17-amazon-corretto
+    state: present
+
+- name: Verify Java version
+  ansible.builtin.command: java -version
+  register: java_version
+  changed_when: false
+
+- debug:
+    msg: "Java installed: {{ java_version.stderr_lines }}"
+
+

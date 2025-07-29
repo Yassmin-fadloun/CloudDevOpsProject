@@ -1,0 +1,14 @@
+---
+- name: Update all packages
+  ansible.builtin.dnf:
+    name: "*"
+    state: latest
+
+- name: Install basic packages
+  ansible.builtin.dnf:
+    name:
+      - git
+      - curl
+      - wget
+    state: present
+

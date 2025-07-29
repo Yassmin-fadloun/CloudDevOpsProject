@@ -1,0 +1,10 @@
+---
+- name: Configure EC2 instances with required packages
+  hosts: all
+  become: yes
+  roles:
+    - common
+    - java
+    - docker
+    - jenkins
+

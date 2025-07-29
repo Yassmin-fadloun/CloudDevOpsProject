@@ -1,0 +1,32 @@
+---
+- name: Add Jenkins repo
+  ansible.builtin.get_url:
+    url: https://pkg.jenkins.io/redhat-stable/jenkins.repo
+    dest: /etc/yum.repos.d/jenkins.repo
+
+- name: Import Jenkins GPG key
+  ansible.builtin.rpm_key:
+    state: present
+    key: https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+
+- name: Install Jenkins
+  ansible.builtin.dnf:
+    name: jenkins
+    state: present
+
+- name: Enable and start Jenkins
+  ansible.builtin.systemd:
+    name: jenkins
+    enabled: yes
+    state: started
+
+- name: Verify Jenkins service status
+  ansible.builtin.systemd:
+    name: jenkins
+    state: started
+  register: jenkins_status
+  changed_when: false
+
+- debug:
+    msg: "Jenkins status: {{ jenkins_status.status.ActiveState }}"
+
