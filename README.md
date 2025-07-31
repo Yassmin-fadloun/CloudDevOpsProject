@@ -4,7 +4,7 @@
 The project delivers a fully automated DevOps pipeline on AWS, where Terraform provisions the infrastructure and Ansible configures the servers. Jenkins builds, scans, and pushes Docker images to Docker Hub, then updates Kubernetes manifests in GitHub. ArgoCD continuously syncs those manifests to a Kubernetes cluster running on private EC2 nodes. The result is a secure, hands‑off CI/CD workflow that takes code from commit to production automatically.
 
 ## Project Architecture
-[][]
+![CloudDevOpsProject](CloudDevOpsProject)
 
 ## Project Structure
 ```bash
@@ -37,7 +37,7 @@ git clone https://github.com/Ibrahim-Adel15/FinalProject.git app-source
 cd app-source
 ```
 ### Create a Dockerfile 
-[][]
+[Dockerfile.single](Dockerfile.single)
 
 ### Build and test Docker image locally
 ```bash
