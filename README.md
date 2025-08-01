@@ -96,7 +96,7 @@ kubectl get svc -n ivolve
 ansible-playbook -i inventory/aws_ec2.yml playbook.yml
 ```
 ## Continuous Integration with Jenkins
-![jen.png](Screenshots/sjen.png)
+![jen.png](Screenshots/jen.png)
 ![stage.png](Screenshots/stage.png)
 
 ## Continuous Deployment with ArgoCD
