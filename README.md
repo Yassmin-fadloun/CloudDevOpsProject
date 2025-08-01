@@ -37,13 +37,15 @@ git clone https://github.com/Ibrahim-Adel15/FinalProject.git app-source
 cd app-source
 ```
 ### Create a Dockerfile 
-[Dockerfile.single](Dockerfile.single)
+[Dockerfile](Docker/Dockerfile)
 
 ### Build and test Docker image locally
 ```bash
 docker build -t my-dockerhub-user/myapp:v1.0.0 .
 docker run -p 5000:5000 my-dockerhub-user/myapp:v1.0.0
 ```
+![web.png](Screenshots/web.png)
+
 ## Container Orchestration with Kubernetes
 
 ### Create Kubernetes namespace
@@ -60,9 +62,33 @@ kubectl apply -f K8s/service.yaml -n ivolve
 kubectl get pods -n ivolve
 kubectl get svc -n ivolve
 ```
+![allnodes.png](Screenshots/allnodes.png)
+![pods.png](Screenshots/pods.png)
+![apply-service](Screenshots/apply-service.png)
 
 ## Infrastructure Provisioning with Terraform
-[][]
+```bash
+ terraform plan
+```
+![ter-plan.png](Screenshots/ter-plan.png)
+```bash
+ terraform apply 
+```
+![ter-apply.png](Screenshots/ter-apply.png)
+### Instance
+![instance.png](Screenshots/instance.png)
+### VPC
+![vpc.png](Screenshots/vpc.png)
+### Subnet
+![subnet.png](Screenshots/subnet.png)
+### Internet Gateway
+![igw.png](Screenshots/igw.png)
+### Route Tables 
+![routetable.png](Screenshots/routetable.png)
+### Network ACLs 
+![netacl.png.png](Screenshots/netacl.png)
+### Security Group 
+![ter-apply.png](Screenshots/ter-apply.png)
 
 ## Configuration Management with Ansible
 ### Run playbook to configure EC2
@@ -70,7 +96,8 @@ kubectl get svc -n ivolve
 ansible-playbook -i inventory/aws_ec2.yml playbook.yml
 ```
 ## Continuous Integration with Jenkins
-[][]
+![jen.png](Screenshots/sjen.png)
+![stage.png](Screenshots/stage.png)
 
 ## Continuous Deployment with ArgoCD
-[][]
+![argo.png](Screenshots/argo.png)
