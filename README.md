@@ -36,7 +36,7 @@ The project delivers a fully automated DevOps pipeline on AWS, where Terraform p
 git clone https://github.com/Ibrahim-Adel15/FinalProject.git app-source
 cd app-source
 ```
-### Create a Dockerfile 
+### ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) Create a Dockerfile 
 [Dockerfile](Docker/Dockerfile)
 
 ### Build and test Docker image locally
@@ -87,8 +87,6 @@ kubectl get svc -n ivolve
 ![routetable.png](Screenshots/routetable.png)
 ### Network ACLs 
 ![netacl.png.png](Screenshots/netacl.png)
-### Security Group 
-![ter-apply.png](Screenshots/ter-apply.png)
 
 ## Configuration Management with Ansible
 ### Run playbook to configure EC2
