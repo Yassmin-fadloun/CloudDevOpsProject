@@ -46,7 +46,7 @@ docker run -p 5000:5000 my-dockerhub-user/myapp:v1.0.0
 ```
 ![web.png](Screenshots/web.png)
 
-## Container Orchestration with Kubernetes
+##<img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes Logo" width="30"> Container Orchestration with Kubernetes
 
 ### Create Kubernetes namespace
 ```bash 
@@ -66,7 +66,7 @@ kubectl get svc -n ivolve
 ![pods.png](Screenshots/pods.png)
 ![apply-service](Screenshots/apply-service.png)
 
-## Infrastructure Provisioning with Terraform
+## <img src="https://www.vectorlogo.zone/logos/terraformio/terraformio-icon.svg" alt="Terraform Logo" width="30"> Infrastructure Provisioning with Terraform in AWS <imgsrc="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS Logo" width="30">
 ```bash
  terraform plan
 ```
@@ -88,14 +88,14 @@ kubectl get svc -n ivolve
 ### Network ACLs 
 ![netacl.png.png](Screenshots/netacl.png)
 
-## Configuration Management with Ansible
+## <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Ansible_logo.svg" alt="Ansible Logo" width="30"> Configuration Management with Ansible
 ### Run playbook to configure EC2
 ```bash
 ansible-playbook -i inventory/aws_ec2.yml playbook.yml
 ```
-## Continuous Integration with Jenkins
+## <img src="https://www.jenkins.io/images/logos/jenkins/jenkins.svg" alt="Jenkins Logo" width="30"> Continuous Integration with Jenkins
 ![jen.png](Screenshots/jen.png)
 ![stage.png](Screenshots/stage.png)
 
-## Continuous Deployment with ArgoCD
+## <img src="https://argo-cd.readthedocs.io/en/stable/assets/logo.png" alt="ArgoCD Logo" width="30"> Continuous Deployment with ArgoCD
 ![argo.png](Screenshots/argo.png)
