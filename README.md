@@ -36,7 +36,7 @@ The project delivers a fully automated DevOps pipeline on AWS, where Terraform p
 git clone https://github.com/Ibrahim-Adel15/FinalProject.git app-source
 cd app-source
 ```
-### ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) Create a Dockerfile 
+### <img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" alt="Docker Logo" width="30"> Create a Dockerfile 
 [Dockerfile](Docker/Dockerfile)
 
 ### Build and test Docker image locally
