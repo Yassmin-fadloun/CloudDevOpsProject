@@ -66,7 +66,7 @@ kubectl get svc -n ivolve
 ![pods.png](Screenshots/pods.png)
 ![apply-service](Screenshots/apply-service.png)
 
-## <img src="https://www.vectorlogo.zone/logos/terraformio/terraformio-icon.svg" alt="Terraform Logo" width="30"> Infrastructure Provisioning with Terraform in AWS <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS Logo" width="30">
+## <img src="https://www.vectorlogo.zone/logos/terraformio/terraformio-icon.svg" alt="Terraform Logo" width="30"> Infrastructure Provisioning with Terraform in <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS Logo" width="30">
 ```bash
  terraform plan
 ```
@@ -88,14 +88,14 @@ kubectl get svc -n ivolve
 ### Network ACLs 
 ![netacl.png.png](Screenshots/netacl.png)
 
-## <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Ansible_logo.svg" alt="Ansible Logo" width="30"> Configuration Management with Ansible
+## <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Ansible_logo.svg" alt="Ansible Logo" width="30">  Configuration Management with Ansible
 ### Run playbook to configure EC2
 ```bash
 ansible-playbook -i inventory/aws_ec2.yml playbook.yml
 ```
-## <img src="https://www.jenkins.io/images/logos/jenkins/jenkins.svg" alt="Jenkins Logo" width="30"> Continuous Integration with Jenkins
+## <img src="https://www.jenkins.io/images/logos/jenkins/jenkins.svg" alt="Jenkins Logo" width="30">  Continuous Integration with Jenkins
 ![jen.png](Screenshots/jen.png)
 ![stage.png](Screenshots/stage.png)
 
-## <img src="https://argo-cd.readthedocs.io/en/stable/assets/logo.png" alt="ArgoCD Logo" width="30"> Continuous Deployment with ArgoCD
+## <img src="https://argo-cd.readthedocs.io/en/stable/assets/logo.png" alt="ArgoCD Logo" width="30">  Continuous Deployment with ArgoCD
 ![argo.png](Screenshots/argo.png)
